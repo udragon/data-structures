@@ -241,7 +241,7 @@ void RBTree<KeyType, ValType>::DeleteFixUp(RBNode<KeyType, ValType>* node) {
 		}
 	}
 
-	node->set_color(RBNode<KeyType, ValType>::BLACK);
+	if(node != NULL) node->set_color(RBNode<KeyType, ValType>::BLACK);
 
 }
 
