@@ -50,7 +50,7 @@ void RBTree<KeyType, ValType>::RightRotate(RBNode<KeyType, ValType>* node) {
 // Red-Black Tree Insert Function
 // Gets key and value, create a node and attach it to the tree.
 template<class KeyType, class ValType>
-void RBTree<KeyType, ValType>::Insert(const KeyType key, const KeyType value) {
+void RBTree<KeyType, ValType>::Insert(const KeyType key, const ValType value) {
 
 	RBNode<KeyType, ValType>* node = new RBNode<KeyType, ValType>(key, value);
 	RBNode<KeyType, ValType>* x = this->root;

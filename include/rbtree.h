@@ -65,7 +65,7 @@ public:
 	RBTree() : root(NULL) {};
 
 	// Red-black tree functions
-	void Insert(const KeyType key, const KeyType value);
+	void Insert(const KeyType key, const ValType value);
 	void Delete(const KeyType &key);
 	
 	// Get functions
